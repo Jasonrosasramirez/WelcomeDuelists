@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { render } from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // {import something specific}
 
 // import CSS Styles 
@@ -25,17 +26,17 @@ function App() {
         <NavHeader />        
 
         <Routes>
-          <Route path = "/" exact component = { Home } />  
-          <Route path = "/TierListPage" exact component = { TierListPage } />  
-          <Route path = "/GOATFormatPage" component = { GOATFormatPage } />
+          <Route path = "/" element = {< Home /> } />  
+          <Route path = "/TierListPage" element = { <TierListPage/> } />  
+          <Route path = "/GOATFormatPage" element = { <GOATFormatPage/> } />
 
         </Routes>
 
       </div>
 
-    </Router>
-        
-    );
+    </Router>        
+          
+  );
     
 }
 

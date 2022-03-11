@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+import '../App.css';
 
 
 function GOATFormatPage () {
     return (
-        <>
+        <div>
             <h1> Do you like sheep? </h1>
-        </>
+        </div>
 
     );
 
