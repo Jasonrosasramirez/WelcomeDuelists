@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 function PageTemplate () {
     return (
         <div>
-            <h1>Hello! I am the pageTemplate</h1>            
+            <h1>Hello! I was going to be the template</h1>            
 
         </div>
 
