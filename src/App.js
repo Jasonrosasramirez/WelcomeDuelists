@@ -1,26 +1,52 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // {import something specific}
+
+// import CSS Styles 
+import './App.css'
 
 // Importing page files 
-import PageTemplate from "./pages/PageTemplate.js";
-import Home from './pages/Home.js';
+import TierListPage from "./pages/TierListPage.js";
+//import HomePage from './pages/HomePage.js';
+import GOATFormatPage from "./pages/GOATFormatPage.js";
 
-// Importing page components 
-import Header from "./components/Header/Header.js";
+// Importing page components  <Route path = "/PageTemplate" component = {PageTemplate} />
+import NavHeader from "./components/NavHeader.js";
+
+
 
 
 function App() {
   
   // The return can only export 1 element. You can bundle multiple elements using a cluster
   return ( 
-    <displayOnScreen>
-      <Header/>
-      <Home/>
-     
-    </displayOnScreen>
+    <Router>
+      <div className = "App">
+
+        <NavHeader />        
+
+        <Routes>
+          <Route path = "/" exact component = { Home } />  
+          <Route path = "/TierListPage" exact component = { TierListPage } />  
+          <Route path = "/GOATFormatPage" component = { GOATFormatPage } />
+
+        </Routes>
+
+      </div>
+
+    </Router>
+        
+    );
     
-    )
 }
 
+// The Home Page
+const Home = () => (
+  <div>
+    <h1>This is the built in home Page</h1>
+
+  </div>
+
+);
 
 
 export default App; // I export to the screen. This gets sent to index.js
