@@ -1,0 +1,48 @@
+.monsterInfo {
+    border: 9px red dashed; 
+    display: flex;
+}
+
+.attribute_Image {
+    height: 50px;
+    width: 50px;
+
+}
+
+.Star_Image {
+    height: 50px;
+    width: 50px;
+
+}
+
+.cardTop {
+    border: 8px green dashed; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardSemiTop {
+    border: 4px blue dashed; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardMiddle {
+    border: 4px orange dotted; 
+}
+
+.cardType {
+    text-align: left;
+}
+
+.cardImage{
+    height:10%;
+    width: 10%;   
+    margin-right: 10px;
+}   
+
+.cardBottom {
+    border: 8px pink dashed; 
+    display: flex;
+    justify-content: space-between;
+}
