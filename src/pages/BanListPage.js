@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import './BanListPage.css';
 
 //import DB Files
-import BanListNames_Array from '../DBGenerationFiles/BanList';
+import BanListNames_Array from '../DBGenerationFiles/BanListNames_Array';
 
 
 function TierListPage () {
@@ -15,29 +15,30 @@ function TierListPage () {
             
             <br></br>
 
-        {/*Forbidden*/}
+        
             <div className='banListGallery'>
+                {/*Forbidden*/}
                 <div className='banListCategory'>
                     <div className='banListCategory_Header'> 
                         <div className='banListCategory_Descr'>
                             <p>image of no Sign</p>
                             <h2>Forbiden Cards</h2>
                         </div>
+                        
                         <p>These cards are not allowed in your deck</p>
                     </div>
 
                     {BanListNames_Array[0]}
                 </div>
-                
-
-        {/*Limited*/}
+            
+                {/*Limited*/}
                 <div className='banListCategory'>
                     <div className='banListCategory_Header'> 
                         <div className='banListCategory_Descr'>
                             <p>image of limited Sign</p>
                             <h2>Limited Cards</h2>
                         </div>
-                        
+                            
                         <p>Only 1 copy of each card is allowed in your deck</p>                        
                     </div>
 
@@ -45,7 +46,7 @@ function TierListPage () {
                 </div>
 
 
-        {/*Semi-Limited*/}
+                {/*Semi-Limited*/}
                 <div className='banListCategory'>
                     <div className='banListCategory_Header'> 
                         <div className='banListCategory_Descr'>
@@ -55,16 +56,49 @@ function TierListPage () {
 
                         <p>Only 2 copy of each card is allowed in your deck</p>
                     </div>
-                    
+                        
                     {BanListNames_Array[2]}
                 </div>
                 
-            </div>
 
-        </div>
+                {/*Practice Section*/}
+
+
+                <div className='banListCategory'>
+                    <div className='banListCategory_Header'> 
+                        <div className='banListCategory_Descr'>
+                            <p>Test Image</p>
+                            <h2>Test Section</h2>
+                        </div>
+
+                        <p>A for loop function will populate the page</p>
+                    </div>
+                        
+                    
+                    {BanListNames_Array[0]}
+                </div>
+                
+
+                {/*Delete Practice section when Done*/}
+                
+        
+
+            </div> {/*end of the banListGallery div*/}
+                
+        </div> // end of the display div
 
     )
 
 }
 
-export default TierListPage; 
+
+function nameFetchFunction (arrayInput) {
+    console.log('The length of your array', arrayInput.name);
+    console.log(arrayInput.length); 
+}
+
+nameFetchFunction(BanListNames_Array);
+
+
+
+export default TierListPage; // exports to App.js
