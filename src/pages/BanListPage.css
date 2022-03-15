@@ -1,0 +1,21 @@
+.banListGallery {
+    border: 10px red dashed;
+}
+
+.banListCategory {
+    border: 6px blue solid;
+    margin: 6px;
+}
+
+.banListCategory_Header {
+    justify-content: center;
+    align-items: center;
+    border: 4px orange solid;
+}
+
+.banListCategory_Descr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
