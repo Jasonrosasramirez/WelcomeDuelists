@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react';
 // importing CSS
 import './BanListPage.css';
 
+//import DB Files
 import BanListNames_Array from '../DBGenerationFiles/BanList';
+
 
 function TierListPage () {
     return (
@@ -27,6 +29,7 @@ function TierListPage () {
                     {BanListNames_Array[0]}
                 </div>
                 
+
         {/*Limited*/}
                 <div className='banListCategory'>
                     <div className='banListCategory_Header'> 
@@ -40,6 +43,7 @@ function TierListPage () {
 
                     {BanListNames_Array[1]}
                 </div>
+
 
         {/*Semi-Limited*/}
                 <div className='banListCategory'>

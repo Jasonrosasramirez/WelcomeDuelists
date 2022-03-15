@@ -19,3 +19,7 @@
     align-items: center;
 }
 
+h2{
+    border: 4px pink solid;
+    margin-left: 4px;
+}
