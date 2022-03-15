@@ -2,6 +2,8 @@
     text-align: center;
 }
 
+/* NavHeader Specific */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -18,3 +20,8 @@ nav {
     align-items: center;
     list-style: none; /* removes the bullet points */
 }
+
+li {
+    color:white;
+}
+

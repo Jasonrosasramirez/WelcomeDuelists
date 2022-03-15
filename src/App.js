@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // {i
 import './App.css'
 
 // Importing page files 
-import TierListPage from "./pages/TierListPage.js";
+import BanListPage from "./pages/BanListPage.js";
 import HomePage from './pages/HomePage.js';
-import GOATFormatPage from "./pages/GOATFormatPage.js";
+import FormatGalleryPage from "./pages/FormatGalleryPage.js";
 
 // Importing page components  <Route path = "/PageTemplate" component = {PageTemplate} />
 import NavHeader from "./components/NavHeader.js";
@@ -25,8 +25,8 @@ function App() {
 
         <Routes>
           <Route path = "/" exact element = { < HomePage /> } />  
-          <Route path = "/TierListPage" element = { < TierListPage /> } />  
-          <Route path = "/GOATFormatPage" element = { < GOATFormatPage /> } />
+          <Route path = "/BanListPage" element = { < BanListPage /> } />  
+          <Route path = "/FormatGalleryPage" element = { < FormatGalleryPage /> } />
 
         </Routes>
 
@@ -39,3 +39,4 @@ function App() {
 }
 
 export default App; // I export to the screen. This gets sent to index.js
+// without exporting the APP, nothing gets displayed on screen. 

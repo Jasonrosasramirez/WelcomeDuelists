@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
+// import CSS Styles 
+import './FormatGalleryPage.css';
 import '../App.css';
 
-// import booster art Images 
-import LOB from '../BoosterSets/00_LOB/Legend of Blue Eyes White Dragon (LOB).png';
-import TriHornedDragon from '../BoosterSets/00_LOB/Monsters/TriHornedDragon.png';
-import BlueEyesWhiteDragon from '../BoosterSets/00_LOB/Monsters/BlueEyesWhiteDragon.png';
-import DarkAttribute from "../Images/DARK.png";
-import STAR from "../Images/STAR.png";
 
 
-// import CSS Styles 
-import './GOATFormatPage.css';
-import { dark } from '@material-ui/core/styles/createPalette';
 
 function GOATFormatPage () {
 
@@ -40,47 +33,6 @@ function GOATFormatPage () {
 
                 <section>
 
-                    <div className='monsterInfo' id='TriHorned_Dragon'>
-
-                        
-                        
-                        <img className="cardImage" src={"https://storage.googleapis.com/ygoprodeck.com/pics/39111158.jpg"}></img>
-
-
-                        <div className='cardInfo'>
-                            
-                            <div className='cardTop'>
-                                <div>
-                                    <h2 className='cardName'>TriHorned_Dragon</h2>
-                                </div>
-                                
-                                <div classname = "attribute">
-                                    <img className = "attribute_Image" src={DarkAttribute}></img>
-                                </div>
-                            </div>
-
-                            <div className='cardSemiTop'>
-                                <img className = "Star_Image" src={STAR}></img>
-                                <h3>Level 8</h3>
-                            </div>
-                            
-                            <div className='cardMiddle'>
-
-                                <p className='cardType'>[Dragon]</p>
-                                <p className='flavorText'>An unworthy dragon with three sharp horns sprouting from its head.</p>
-                            </div>
-                            
-                            <div className="cardBottom">
-                                <p> ATT/2850 DEF/2350 </p>
-                                <p> R </p>
-                            </div>
-                            
-
-                            
-                                                        
-                        </div>
-
-                    </div>
                     
                 </section>
 
@@ -167,6 +119,47 @@ Dark Beginning 2 (DB2).
 
                 </section>
 
+*/
+
+
+/*
+
+                    <div className='monsterInfo' id='TriHorned_Dragon'>
+                        
+                        <img className="cardImage" src={"https://storage.googleapis.com/ygoprodeck.com/pics/39111158.jpg"}></img>
+
+                        <div className='cardInfo'>
+                            
+                            <div className='cardTop'>
+                                <div>
+                                    <h2 className='cardName'>TriHorned_Dragon</h2>
+                                </div>
+                                
+                                <div classname = "attribute">
+                                    <img className = "attribute_Image" src={DarkAttribute}></img>
+                                </div>
+                            </div>
+
+                            <div className='cardSemiTop'>
+                                <img className = "Star_Image" src={STAR}></img>
+                                <h3>Level 8</h3>
+                            </div>
+                            
+                            <div className='cardMiddle'>
+
+                                <p className='cardType'>[Dragon]</p>
+                                <p className='flavorText'>An unworthy dragon with three sharp horns sprouting from its head.</p>
+                            </div>
+                            
+                            <div className="cardBottom">
+                                <p> ATT/2850 DEF/2350 </p>
+                                <p> R </p>
+                            </div>
+                            
+                            
+                        </div>
+
+                    </div>
 
 
 */

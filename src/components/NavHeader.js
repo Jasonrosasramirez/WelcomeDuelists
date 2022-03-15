@@ -2,10 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 
-// import CSS Styles 
-//import '../App.css'
-
-
 function NavHeader() {
     
     return(
@@ -14,8 +10,8 @@ function NavHeader() {
 
             <ul className='navLinks'>
                 <Link to = '/'> <li> Home Page </li> </Link>
-                <Link to = '/TierListPage'> <li> Tier Lists </li> </Link>
-                <Link to = '/GOATFormatPage'> <li> GOAT Format </li> </Link>
+                <Link to = '/BanListPage'> <li> BanList </li> </Link>
+                <Link to = '/FormatGalleryPage'> <li> Format Gallery </li> </Link>
 
             </ul>
 

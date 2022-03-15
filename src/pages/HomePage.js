@@ -4,7 +4,9 @@ import React from 'react';
 function Home () {
     return (
         <div>
-            <h1> Welcome! This is the home page </h1>
+            <h1> GOAT Format </h1>
+            <h2> In Master Duel </h2>
+            <p> Play a simpler Meta Game </p>
         </div>
 
     );
