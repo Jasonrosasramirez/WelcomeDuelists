@@ -1,6 +1,6 @@
 //This uses the BanListNames_Array Information to search in the API
 
-import './BanListNames_Array.js';
+//import './BanListNames_Array.js';
 
 
 function nameFetchFunction (arrayInput) {

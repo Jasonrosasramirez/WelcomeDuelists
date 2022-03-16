@@ -99,4 +99,6 @@ function TierListPage () {
 // testing if this can populate the page
 nameFetchFunction(BanListNames_Array); 
 
+
+
 export default TierListPage; // exports to App.js
