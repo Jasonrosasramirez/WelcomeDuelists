@@ -5,6 +5,7 @@ import './BanListPage.css';
 
 //import DB Files
 import BanListNames_Array from '../DBGenerationFiles/BanListNames_Array';
+import { nameFetchFunction } from '../DBGenerationFiles/DBSearching'; // this is the search engine function 
 
 
 function TierListPage () {
@@ -63,7 +64,6 @@ function TierListPage () {
 
                 {/*Practice Section*/}
 
-
                 <div className='banListCategory'>
                     <div className='banListCategory_Header'> 
                         <div className='banListCategory_Descr'>
@@ -75,7 +75,12 @@ function TierListPage () {
                     </div>
                         
                     
-                    {BanListNames_Array[0]}
+                    <div className='displayArrayWindow'>
+                        <p> The names will be printed below </p>
+
+                        {BanListNames_Array[2]}
+                    </div>
+
                 </div>
                 
 
@@ -91,14 +96,7 @@ function TierListPage () {
 
 }
 
-
-function nameFetchFunction (arrayInput) {
-    console.log('The length of your array', arrayInput.name);
-    console.log(arrayInput.length); 
-}
-
-nameFetchFunction(BanListNames_Array);
-
-
+// testing if this can populate the page
+nameFetchFunction(BanListNames_Array); 
 
 export default TierListPage; // exports to App.js
