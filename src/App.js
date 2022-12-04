@@ -6,12 +6,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // {i
 import './App.css'
 
 // Importing page files 
-import BanListPage from "./pages/BanListPage.js";
 import HomePage from './pages/HomePage.js';
-import FormatGalleryPage from "./pages/FormatGalleryPage.js";
+import ShopPage from './pages/ShopPage.js';
+import EventsPage from './pages/EventsPage.js';
+import ContactsPage from "./pages/ContactPage";
 
 // Importing page components  <Route path = "/PageTemplate" component = {PageTemplate} />
-import NavHeader from "./components/NavHeader.js";
+import NavLinks from "./components/NavLinks.js";
 
 
 function App() {
@@ -21,13 +22,12 @@ function App() {
     <Router>
       <div className = "App">
 
-        <NavHeader />        
-
+        <NavLinks />        
         <Routes>
           <Route path = "/" exact element = { < HomePage /> } />  
-          <Route path = "/BanListPage" element = { < BanListPage /> } />  
-          <Route path = "/FormatGalleryPage" element = { < FormatGalleryPage /> } />
-
+          <Route path = "/ShopPage" element = { < ShopPage /> } />
+          <Route path = "/EventsPage" element = { < EventsPage /> } />
+          <Route path = "/ContactsPage" element = { < ContactsPage /> } />
         </Routes>
 
       </div>

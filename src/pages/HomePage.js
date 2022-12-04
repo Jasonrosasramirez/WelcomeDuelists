@@ -1,16 +1,16 @@
 import React from 'react';
 
 
-function Home () {
+function HomePage () {
     return (
         <div>
-            <h1> GOAT Format </h1>
-            <h2> In Master Duel </h2>
-            <p> Play a simpler Meta Game </p>
+            <h1> Andover Games </h1>
+            <h2> Welcome Here </h2>
+            <p> Come and Visit :D </p>
         </div>
 
     );
 
 }
 
-export default Home; // I will export to App.js
+export default HomePage; // I will export to App.js
