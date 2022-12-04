@@ -11,6 +11,7 @@ function NavLinks() {
             <ul className='navLinks'>
                 <Link to = '/'> <li> Home </li> </Link>
                 <Link to = '/ShopPage'> <li> Shop </li> </Link>
+                <Link to = '/FoodPage'> <li> Food Menu </li> </Link>
                 <Link to = '/EventsPage'> <li> Events </li> </Link>
                 <Link to = '/ContactsPage'> <li> Contacts </li> </Link>
             </ul>

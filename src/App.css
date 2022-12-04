@@ -2,14 +2,20 @@
     text-align: center;
 }
 
-/* NavHeader Specific */
 
+/* Universal */
+body, html {
+    height: 100%;
+}
+
+
+/* NavHeader Specific */
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: rgb(73, 79, 82);
+    background: rgb(58, 42, 41);
     color: white;
 }
 
@@ -23,5 +29,56 @@ nav {
 
 li {
     color:white;
+}
+
+/* HomePage Specific  */
+.hero-image {
+    border: 4px blue dashed;
+    margin-top: 6px;
+
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../public/Images/HeroImage_2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hero-text p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.HomePage_Remaining {
+    border: 4px blue dashed;
+    margin-top: 6px;
+}
+
+.Home_MidCards {
+    border: 4px green dotted;   
+    display: flex;
+    justify-content: center;
+}
+
+.Home_card {
+    border: 4px red dashed;
+    margin: 4px;
+    height: 250px;
+    width: 450px;
 }
 

@@ -8,6 +8,7 @@ import './App.css'
 // Importing page files 
 import HomePage from './pages/HomePage.js';
 import ShopPage from './pages/ShopPage.js';
+import FoodPage from "./pages/FoodPage";
 import EventsPage from './pages/EventsPage.js';
 import ContactsPage from "./pages/ContactPage";
 
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path = "/" exact element = { < HomePage /> } />  
           <Route path = "/ShopPage" element = { < ShopPage /> } />
+          <Route path = "/FoodPage" element = { < FoodPage /> } />
           <Route path = "/EventsPage" element = { < EventsPage /> } />
           <Route path = "/ContactsPage" element = { < ContactsPage /> } />
         </Routes>
